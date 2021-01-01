@@ -2,6 +2,7 @@ locals {
     vpc_id = ""
 }
 
+# Security Group with open configuration
 resource "aws_security_group" "demo_sg" {
   name        = "acai-lab-demo-sg"
   description = "This security group will toggle between open and restricted"
